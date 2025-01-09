@@ -1,0 +1,82 @@
+.menu {
+    position:sticky;
+    top:0;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E9E9E9;
+    margin-bottom: 40px;
+}
+
+.menuItem {
+    position: relative;
+    height: 100%;
+    padding: 20px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.menuItem:hover .subMenuPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem span {
+    height: 16px;
+}
+
+.subMenuPopUp {
+    width: 176px;
+    height: 173px;
+    border: 1px solid #E9E9E9;
+    background-color: white;
+    padding: 8px;
+    top: 56px;
+    left: 0;
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+
+.subMenuLink {
+    /*width: 100%;*/
+    width: 136px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+.subMenuLink li {
+    list-style: none;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+    color:#000000;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.subMenuLink li:hover {
+    color: #969696;
+}
